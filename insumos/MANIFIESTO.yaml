@@ -1,0 +1,87 @@
+# Manifiesto derivado del codigo. Los archivos ya estaban abiertos cuando se
+# escribio: esto documenta lo que hay y deja constancia de lo que falta
+# declarar. El conteo de patrones de dato personal no se pudo hacer porque la
+# evidencia extraida no incluye el contenido de los archivos.
+
+archivos:
+
+  - ruta: frontend/package.json
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Unico manifiesto de dependencias del repositorio; declara ocho paquetes y los comandos de desarrollo, construccion y previsualizacion [frontend/package.json:1]"
+
+  - ruta: frontend/package-lock.json
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Fija las versiones exactas del arbol de dependencias que resuelve el manifiesto"
+
+  - ruta: frontend/vite.config.js
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Configuracion de construccion; contiene la unica variable de entorno detectada en todo el repositorio, la que fija la ruta base de publicacion [frontend/vite.config.js:7]"
+
+  - ruta: frontend/src/fixtures/casos.js
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] archivo alojado bajo un directorio de fixtures, lo que aumenta la probabilidad de que sea material sintetico, pero la evidencia no lo confirma; la evidencia no reporta patrones ni conteo. Si el archivo contiene casos reales de denuncia, contiene_pii pasa a true y puede_versionarse a false"
+    puede_versionarse: true
+    uso: "Unico conjunto de datos del repositorio; casos de ejemplo que alimentan las pantallas [frontend/src/fixtures/casos.js]"
+
+  - ruta: frontend/src/context/CanalContext.jsx
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Define el estado compartido entre pantallas; es el lugar por donde pasa lo que el usuario escribe en los formularios [frontend/src/context/CanalContext.jsx:1]"
+
+  - ruta: .github/workflows/deploy.yml
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Flujo de integracion continua que publica el sitio construido"
+
+  - ruta: .github/workflows/readme.yml
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Segundo flujo de integracion continua del repositorio; su objeto exacto es [PENDIENTE] porque su contenido no esta en la evidencia"
+
+  - ruta: CONFIG_GITHUB_PAGES.md
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Nota de configuracion del alojamiento del sitio"
+
+  - ruta: frontend/VERSIONES.md
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Registro propio de versiones del frontend; es la unica traza de iteraciones del repositorio"
+
+  - ruta: frontend/ejecutar.bat
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Atajo de arranque local para estacion de trabajo Windows"
+
+  - ruta: .gitattributes
+    sha256: "[PENDIENTE] sin calcular"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] la evidencia no reporta patrones de dato personal en este archivo; conteo no disponible"
+    puede_versionarse: true
+    uso: "Normaliza el tratamiento de los archivos por parte del control de versiones"
+
+notas:
+  - "El repositorio no tiene .gitignore en la evidencia extraida, de modo que no existe hoy ningun mecanismo declarado para excluir del control de versiones un archivo con dato personal. Es un hallazgo para el informe, no una correccion que corresponda hacer aqui."
+  - "El repositorio es publico segun la evidencia de origen. Si alguno de los archivos anteriores llegara a contener casos reales, la exposicion es inmediata. [VERIFICAR]"
