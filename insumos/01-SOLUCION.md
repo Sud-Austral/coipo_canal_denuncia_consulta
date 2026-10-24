@@ -84,7 +84,9 @@ Quien administra ese alojamiento y bajo que dominio queda visible:
 
 ## Iteraciones
 
-El repositorio lleva un archivo propio de versiones [frontend/VERSIONES.md].
-Su contenido no esta en la evidencia extraida, asi que el numero de
-iteraciones y sus fechas son [PENDIENTE]. El README del repositorio se reduce
-al nombre y a un codigo corto [README.md]; no describe el sistema.
+El repositorio lleva un registro propio de versiones [frontend/VERSIONES.md] (VERIFICADO): una sola entrada,
+**v0.1.0, «En revisión»**, maqueta exploratoria con Inicio, Denuncia, Consulta y Seguimiento, Context API, fixtures ficticios
+y generación simulada de códigos de seguimiento. Una versión solo pasa a base oficial cuando el usuario entrega su OK
+explícito; ese OK aún no consta. Los textos del README del frontend confirman: sin backend, base de datos ni almacenamiento
+real, y «no ingresar información real o sensible». El README de la raíz fue completado en la actualización de documentación
+del 2026-10-24 [README.md].
